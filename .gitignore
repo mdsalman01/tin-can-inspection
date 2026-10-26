@@ -1,0 +1,9 @@
+# Claude Code
+CLAUDE.md
+.claude/
+
+# Python
+**/.venv/
+**/venv/
+__pycache__/
+*.pyc

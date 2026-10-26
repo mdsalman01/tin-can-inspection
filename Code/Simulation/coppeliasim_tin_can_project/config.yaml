@@ -1,0 +1,27 @@
+simulation:
+  speed_m_s: 0.55
+  time_step_s: 0.05
+  dwell_steps_at_camera: 12
+  frames_per_motion: 24
+  keep_cans_in_bins: false
+  show_opencv_window: true
+
+inspection:
+  input_images: data/input_images
+  good_reference_images: data/good_reference
+  weights_csv: data/weights.csv
+  nominal_weight_g: 400.0
+  weight_tolerance_g: 12.0
+  anomaly_threshold: 4.0
+  ocr_min_confidence: 0.30
+  require_expiry_date: true
+  ocr_affects_decision: false
+  yolo_weights: null
+  yolo_confidence: 0.35
+  defect_classes: [dent, scratch, rust, deformation, damaged]
+
+output:
+  directory: output
+  results_csv: inspection_results.csv
+  annotated_directory: annotated
+  virtual_camera_directory: virtual_camera
